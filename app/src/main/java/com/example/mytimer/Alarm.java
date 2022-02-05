@@ -23,6 +23,7 @@ public class Alarm extends AppCompatActivity implements TimePickerDialog.OnTimeS
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.status));
         mTextView=findViewById(R.id.textViewAlarm);
         Button buttonTimePicker=findViewById(R.id.btn_timepicker);
         buttonTimePicker.setOnClickListener(new View.OnClickListener() {
